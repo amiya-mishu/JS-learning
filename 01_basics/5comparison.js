@@ -49,3 +49,30 @@ console.log(id==id2);//---false
 
 
 
+//-----------------------------------------------------
+
+//Stack and heap memory 
+//stack for primitive(copy milta h ) and heap for non primitive(original address milta h ) data type 
+//heap gives reference to original value 
+
+let myname="hlooo"
+let urname=myname
+urname="hii"
+console.log(urname);
+console.log(myname);
+
+let user1={
+    email:"hii@oracle.com",
+    upi:"user1@okhhui"
+
+}
+
+let user2=user1
+user2.email="myam@gmail.com"
+
+console.log(user1.email);//myam@gmail.com
+console.log(user2.email);//myam@gmail.com
+
+//non primitve me direect value hi change kr deta h
+
+
