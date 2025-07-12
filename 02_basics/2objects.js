@@ -27,9 +27,28 @@ console.log(JsUser["loc"])
 console.log(JsUser[mysim])
 JsUser.email="jii@gmail.com"
 // freeze kr dene se change nhi hoga 
-Object.freeze(JsUser)
+//Object.freeze(JsUser)
 JsUser.email="jii@microsoft.com"
 console.log(JsUser.email)
 //check o/p change nhi hoga
 
- 
+
+// to create a new attribute in an object
+JsUser.greeting=function(){
+    console.log("hello js user")
+
+}
+console.log(JsUser.greeting())
+
+ //name ko reference krna h 
+ JsUser.greeting2=function(){
+    console.log(`hello js user,${this.name}`)
+
+}
+console.log(JsUser.greeting())
+console.log(JsUser.greeting2())
+
+
+
+//objects part 2 
+
