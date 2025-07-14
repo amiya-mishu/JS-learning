@@ -28,12 +28,15 @@ console.log(regularuser.fullname.userfullname.firstname)
 
 const obj1= {1:"a",2:"b"}
 const obj2={3:"a", 4:"b"}
-const obj3={obj1, obj2}
+//const obj3={obj1, obj2}
+//ye bhi nhi use krenge 
+
 const obj4 = Object.assign({}, obj1, obj2)
 // assign wale se ye saara align ho jata h achhe se
 // { } ----> ye daaalna is not important
 //but agar daalte h to isme jata h iske beech me saara values
 // agar nhi daalte h to object 1 mtlb jo pehle likha hoga usme jata h value
+const obj3={...obj1, ...obj2}
 
 console.log(obj3, obj4)
 
@@ -67,5 +70,27 @@ users[1].email
 console.log(tinderUser)
 console.log(Object.keys(tinderUser))
 console.log(Object.values(tinderUser))
+
+
+
+//entries hota hai kuchh imp nhi h but dekh lena 
+
+//objects destructuring and json api 
+
+const course ={
+    coursename: "js in hindi ",
+    prie: "999",
+    courseInstructor:"Amiya"
+
+}
+ 
+const {courseInstructor}= course
+//  const {courseInstructor: instructor}= course
+//phir iske hisaab se print statemnt likhna hoga 
+// console.log ( instructor )
+
+console.log(courseInstructor)
+
+
 
 
