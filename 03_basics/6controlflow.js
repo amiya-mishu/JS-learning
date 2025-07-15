@@ -35,5 +35,16 @@ if(score>100)
     }
     */
 
+const userLoggedIn = true
+const  debitCard= true
+const loggedInFromGoogle =false
+const loggedINFromEmail= true
+if(userLoggedIn && debitCard && 2==2){
+    console.log (" allow to buy the course")
+
+}
+
+    if (loggedInFromGoogle || loggedINFromEmail)
+        console.log("allowed")
 
     
