@@ -57,3 +57,5 @@ const num=[1,2,3,4,5,6,7,8,9,10]
 
  const userbooks= book.filter( (bk)=>bk.genre==='History')
  console.log (userbooks)
+ const userbooks1= book.filter( (bk)=>{return bk.edition>=2000})
+ console.log (userbooks1)
